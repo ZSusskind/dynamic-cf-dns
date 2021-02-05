@@ -1,4 +1,4 @@
-First, you'll need to change the "email" and "api\_key" fields to your Cloudflare email and api key.
+First, you'll need to change the `email` and `api_key` fields to your Cloudflare email and api key.
 
 Since your API key is present in plaintext, it's probably not a bad idea to restrict ownership and/or change ownership to root:
 ```
@@ -13,7 +13,9 @@ sudo mv update_dns.py /usr/local/sbin/update_dns/.
 ```
 
 Then you can set it to run as a cronjob:
-    sudo crontab -e
+```
+sudo crontab -e
+```
 
 Add entries to run after a reboot and however often you like (example runs every hour):
 ```
